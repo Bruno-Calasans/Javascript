@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Existência de Triângulo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="div1">
+        <h1>Existe ou não um triângulo?</h1>
+        <p id="subtit">
+            Digite as três medidas de um possível triângulo para verificarmos se ele existe ou não:
+        </p>
+
+        <p>
+            <label for="">Primeiro lado:</label>
+            <input type="number" name="lado1" id="lado1" min="0">
+        </p>
+
+        <p>
+            <label for="">Segundo lado:</label>
+            <input type="number" name="lado1" id="lado2" min="0">
+        </p>
+
+        <p>
+            <label for="">Terceiro lado:</label>
+            <input type="number" name="lado1" id="lado3" min="0">
+        </p>
+
+        <p>
+            Classificação do Triângulo: <span id="tipo"></span>
+        </p>
+
+        <p id="submit">
+            <input type="submit" value="Verificar" onclick="existe_triang()">
+        </p>
+
+        <p id="msg">
+            Resultado aparecerá aqui!
+        </p>
+
+    </div>
+    
+</body>
+</html>

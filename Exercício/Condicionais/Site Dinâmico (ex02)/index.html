@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Dinâmica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onmousemove="validar_dados()">
+    <main>
+
+        <header>
+            <h1>Verificador de Idade</h1>
+        </header>
+           
+        <section>
+
+            <article>
+                <picture>
+                    <img src="media/default.jpg" alt="" id="imagem_idade">
+                    <figcaption id="txt_idade">
+                        
+                    </figcaption>
+                </picture>
+            </article>
+
+            <div id="div1">
+                <p>
+                    <label for="idade">Digite a sua idade:</label>
+                    <input type="number" name="idade" min="1" max="100" id="idade" required>
+                </p>
+                <p>Sexo:
+                    <input type="radio" name="gênero" required
+                    id="masculino">
+                    <label for="">Masculino</label>
+                    <input type="radio" name="gênero" required>
+                    <label for="">Feminino</label>
+                </p>
+                <p>
+            
+                    <input type="submit" value="Analisar Idade" id="submit_button" onclick="analisar_idade()" disabled>
+                    </p>
+            </div>
+
+        </section>
+    
+        <footer>
+            <p>
+                &copy Site Teste
+            </p>
+        </footer>
+
+    </main>
+    
+</body>
+</html>

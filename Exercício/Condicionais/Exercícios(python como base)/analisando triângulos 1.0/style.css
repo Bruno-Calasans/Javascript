@@ -1,0 +1,21 @@
+div#div1{
+    display: inline-block;
+    border: black solid 2px;
+    padding: 10px;
+}
+
+#div1 h1{
+    text-align: center;
+    border: blue solid 2px;
+}
+
+#submit input{
+    width: 90px;
+    margin: 1px 200px;
+}
+
+#msg{
+    border: blue solid 2px;
+    display: block;
+
+}

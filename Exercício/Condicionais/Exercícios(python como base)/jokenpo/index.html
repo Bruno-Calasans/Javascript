@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo-ken-po</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div id="div1">
+        <h1>Jo-ken-po?</h1>
+
+        <p id="submsg">
+            Escolha uma das opções abaixo:
+        </p>
+        
+        <p class="opção">
+            <input class="btn_opção" type="button" value="Pedra" onclick="jokenpo('pedra')">
+            <img src="media/pedra.png" alt="pedra">
+            
+        </p>
+
+        <p class="opção">
+            <input class="btn_opção" type="button" value="Papel" onclick="jokenpo('papel')">
+            <img src="media/papel.png" alt="papel">
+            
+        </p>
+
+        <p class="opção">
+            <input class="btn_opção" type="button" value="Tesoura" onclick="jokenpo('tesoura')">
+            <img src="media/tesoura.png" alt="tesoura">
+            
+        </p>
+
+        <p id="resultado_imagem">
+            <span class="spanimagem">
+                Player: <img src="media/default.png" alt="" id="player_image">
+            <span>
+            
+            <span class="spanimagem">
+                CPU: <img src="media/default.png" alt="" id="cpu_image">
+            </span>
+        </p>
+
+        <p id="resultado_texto">
+            Resultado: <span id="txt_resultado"></span>
+        </p>
+
+    </div>
+    
+    
+</body>
+</html>

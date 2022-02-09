@@ -1,0 +1,47 @@
+div{
+    border: rgb(11, 11, 33) solid 2px;
+    padding: 10px;
+    width: 350px;
+    margin: auto;
+    border-radius: 4%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.446);
+    background-color: burlywood;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div h1{
+    text-align: center;
+    color: rgb(55, 36, 29);
+    background-color: coral;
+    border-radius: 10%;
+    
+}
+
+#subtit{
+    background-color: rgba(255, 127, 80, 0.809);
+    text-align: center;
+}
+
+
+.input label{
+    display: inline-block;
+    width: 210px;
+    text-align: right;
+}
+
+.input input{
+    margin: 0px;
+    width: 100px;
+    
+}
+
+#buttons{
+    width: 200px;
+    margin: 10px 100px;
+}
+
+#msg {
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+}

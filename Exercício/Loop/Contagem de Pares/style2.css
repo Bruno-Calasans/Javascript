@@ -1,0 +1,61 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header h1{
+    background-color: #f39959bd;
+    border: black solid 2px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    
+}
+
+section{
+    background-color: #f39959bd;
+    border: black solid 2px;
+    width: 300px;
+    margin: auto;
+    font-family: sans-serif;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.446);
+    padding: 5px;
+}
+
+p.entrada{
+    padding: 3px;
+    margin: 5px;
+}
+
+p.entrada label{
+    display: inline-block;
+    width: 50px;
+    height: 21px;
+    text-align: right;
+}
+
+
+p#submit input{
+    width: 80px;
+    display: block;
+    margin: auto;
+    padding: 2px;
+}
+
+#início, #fim, #passo{
+    width: 50px;
+}
+
+p#contagem_txt{
+    background-color: blanchedalmond;
+    text-align: justify;
+}
+
+footer p{
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,74 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header h1{
+    background-color: #f39959bd;
+    width: 350px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+section{
+    background-color: #f39959bd;
+    border: black solid 2px;
+    width: 350px;
+    margin: auto;
+    margin-bottom: 7px;
+    padding: 5px;
+    font-family: sans-serif;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.446);
+}
+
+fieldset{
+    margin: 5px;
+}
+
+section article{
+    margin: 10px;
+    
+}
+
+footer p{
+    text-align: center;
+    font-style: italic;
+}
+
+label{
+    display: inline-block;
+    width: 75px;
+}
+
+input.button{
+    display: inline-block;
+    width: 70px;
+    padding: 5px;
+    
+}
+
+p#resultado{
+    background-color: aliceblue;
+    padding: 5px;
+    margin: 5px;
+    border: black solid 1px;
+}
+
+div#form{
+    width: 300px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+div#form input, label{
+    margin: 5px;
+}
+
+p.buttons{
+    display: block;
+    width: 150px;
+    margin: auto;
+}

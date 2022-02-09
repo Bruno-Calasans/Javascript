@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior ou Menor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="div1">
+        <h1>Maior ou Menor</h1>
+        <p>
+            Digite 3 números para verificarmos quais os <strong>maiores</strong> e <strong>menores</strong> valores:
+        </p>
+
+        <p>
+            <label for="">Primeiro número:</label>
+            <input type="number" name="number1" id="n1">
+        </p>
+        
+        <p>
+            <label for="">Segundo número:</label>
+            <input type="number" name="number2" id="n2">
+        </p>
+        
+        <p>
+            <label for="">Terceiro número:</label>
+            <input type="number" name="number3" id="n3">
+        </p>
+       
+        <p id="pSubmit">
+            <input type="submit" onclick="verificar_num()">
+        </p>
+
+        <p id="msg">O resultado aparecerá aqui!</p>
+    </div>
+    
+</body>
+</html>

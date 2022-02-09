@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="criarLista()">
+    <main>
+        <header>
+            <h1>Colocação de Times</h1>
+        </header>
+           
+            <section>
+
+                <article>
+                    <p id="msg">
+                       Iremos mostrar todos os times colocados ou mostrar de forma personalizada.
+                    </p>
+
+                    <fieldset id="lista">
+                        <legend>Classificação</legend>
+                        <select id="teamList" size="20">
+                        
+                        </select>
+                    </fieldset>
+
+                    <fieldset id="personalizado">
+                        <legend>Exibição Personalizada</legend>
+                        <p>
+                            <input type="submit" value="Mostrar" id="showFirst">
+                            <input type="number" min="1" max="20" id="first" required>
+                            primeiros colocados.
+                        
+                        </p>
+                        <p>
+                            <input type="submit" value="Mostrar" id="showLast">
+                            <input type="number" min="1" max="20" id="last" required>
+                            últimos colocados.
+                        </p>
+                        <p>
+                            <input type="submit" value="Mostrar" id="showEspecific">
+                            <input type="number" min="1" max="20" 
+                            id="especific" required>
+                            colocado.
+                        
+                        </p>
+                        <p>
+                            <input type="submit" value="Mostrar Tudo"  id="showAll">
+                        </p>
+                        
+                        <fieldset>
+                            <legend>Pesquisar por nome</legend>
+
+                            <label>Digite o nome do time ou selecione</label>
+                            <input list="lista_times" id="pesquisa">
+
+                            <datalist id="lista_times">
+                            </datalist>
+
+                            <input type="submit" value="Pesquisar" id="search">
+
+                        </fieldset>
+                        
+
+                    </fieldset>
+          
+                </article>
+                
+            </section>
+
+        <footer>
+            <p>
+                &copy Site Teste
+            </p>
+        </footer>
+
+    </main>
+    
+</body>
+</html>

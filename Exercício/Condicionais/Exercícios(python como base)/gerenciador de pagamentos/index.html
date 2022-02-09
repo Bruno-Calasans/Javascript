@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Loja 1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onmousemove="ativarParcelasOption()">
+
+    <div id="div1">
+
+        <h1>Loja do Krl</h1>
+
+        <p>
+            <label for="valorCompras">Valor total das compras: R$</label>
+            <input type="number" id="valorCompras" min="0" max="1000">
+        </p>
+
+        <p id="subtit">
+            Escolha uma das formas de pagamento abaixo:
+        </p>
+
+        <p>
+            <label for="pagamento">Tipo de pagamento: </label>
+            <select id="pagamento">
+                <option value="1">Pagamento à vista</option>
+                <option value="2">1x no cartão</option>
+                <option value="3">2x no cartão</option>
+                <option value="4">3x ou mais parcelas</option>
+            </select>
+        </p>
+
+        <p id="numParcelas">
+            <label for="num_parcelas">Número de parcelas: </label>
+            <select id="num_parcelas" disabled>
+                <option value="3">3x</option>
+                <option value="4">4x</option>
+                <option value="5">5x</option>
+                <option value="6">6x</option>
+                <option value="7">7x</option>
+            </select>
+        </p>
+
+        <p id="resultado"> 
+            Desconto: <span id="descTxt"></span>
+            <br>
+            Valor da parcela: R$<span id="parcelaTxt"></span>
+            <br>
+            Valor total R$<span id="valorTotal"></span>
+        </p>
+
+        <p id="submit">
+            <input type="submit" value="Confirmar" onclick="calcular_compras()">
+        </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header h1{
+    background-color: chocolate;
+    border: black solid 4px;
+    border-radius: 10px;
+    margin: 4px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+section{
+    background-color: rgba(243, 153, 89, 0.741);
+    border: black solid 2px;
+    width: 380px;
+    margin: auto;
+    padding: 5px;
+    font-family: sans-serif;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.446);
+}
+div{
+    width: 360px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+div#perguntas{
+    border: black solid 2px;
+    background-color: burlywood;
+}
+
+div#perguntas header{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+label.labels{
+    display: inline-block;
+    width: 130px;
+    text-align: left;
+    font-weight: bold;
+    margin: 5px;
+}
+
+
+div#número{
+    border: black solid 2px;
+    display: inherit;
+}
+
+article.txt{
+    background-color: blanchedalmond;
+    width: 340px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 7px;
+}
+
+div#intervalo{
+    display: none;
+    border: black solid 2px;
+}
+
+input#submit{
+    padding: 5px;
+    width: 70px;
+    display: block;
+    margin: auto;
+}
+
+footer p{
+    background-color: rgb(255, 183, 0);
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maioridade</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Maioridade ou Não?</h1>
+        </header>
+           
+            <section>
+                
+                    <div id="form">
+                        <p>
+                            Iremos verificar quantas pessoas são maiores de idade ou não pela idade. Para isso, informe-nos:
+                        </p>
+
+                        <p>
+                           <label for="">Número de pessoas: </label>
+                           <input type="number" id="numPessoas" min="1" max="100">
+
+                           <input type="button" 
+                           value="Criar"
+                           title="Cria campos de nascimento de acordo com o número de pessoas escolhidas"
+                           id="criar">
+
+                        </p>
+                        <p id="nascimentos">
+
+                        </p>
+                        
+                        <p>
+                            <input type="submit" value="Verificar!" 
+                            id="submit" disabled>
+                        </p>
+                        <p id="resultado">
+                            O resultado vai aparecer aqui!
+                        </p>
+                    </div>
+                
+            </section>
+
+        <footer>
+            <p>
+                &copy Site Teste
+            </p>
+        </footer>
+
+    </main>
+    
+</body>
+</html>

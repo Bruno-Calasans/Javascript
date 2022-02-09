@@ -1,0 +1,33 @@
+div#div1{
+    display: block;
+    border: black solid 2px;
+    padding: 10px;
+    background-color: burlywood;
+    width: 300px;
+    margin: auto;
+}
+
+#div1 h1{
+    text-align: center;
+    border: rgb(11, 11, 21) solid 2px;
+}
+
+div#div1 p#subtit{
+    text-align: justify;
+}
+
+#submit{
+    width: 100px;
+    margin: auto;
+}
+#submit input{
+    width: 90px;
+    
+}
+
+#msg{
+    border: rgb(10, 10, 17) solid 2px;
+    display: block;
+    text-align: center;
+    background-color: rgb(14, 7, 7);
+}

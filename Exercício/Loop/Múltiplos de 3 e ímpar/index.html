@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Dinâmica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Contador Personalizado</h1>
+        </header>
+           
+            <section>
+                <p>
+                    *Preencha pelo menos o número inicial ou final.
+                    *Campos não preenchidos serão considerados zero(0)
+                </p>
+                
+                <p>
+                    <label for="" class="labels">Número Inicial: </label>
+                    <input type="number" min="0" id="num_inicial">
+                </p>
+                <p>
+                    <label for="" class="labels">Número Final: </label>
+                    <input type="number" min="0" id="num_final">
+                </p>
+                <p id="tipo_contagem">
+
+                    <label for="">Escolha o tipo de contagem: </label>
+                    <select name="tipo" id="tipo" onclick="aparecerEscolhas()">
+                        <option value="par">Pares</option>
+                        <option value="ímpar">Ímpares</option>
+                        <option value="multi">Múltiplos de x</option>
+                    </select>
+
+                    <div id="escolha_multi">
+                        <label for="">Escolha o múltiplo: </label>
+                        <input type="number" min="1" max="1000" id="múltiplo">
+                    </div>
+
+                </p>
+                <p id="submit">
+                    <input type="submit" value="Contar" onclick="contagemPersonalizada()" id="submit_btn">
+                </p>
+
+                <p id="contagem_txt">
+                    Contagem vai aparecer aqui!
+                </p>
+
+                <p id="soma">
+                    Soma Total: 
+                </p>
+
+            </section>
+
+        <footer>
+            <p>
+                &copy Site Teste
+            </p>
+        </footer>
+
+    </main>
+    
+</body>
+</html>

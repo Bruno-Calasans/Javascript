@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custo da Viagem</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<div id="form_custo_viagem">
+    <h1>Qual será o custo da sua viagem?</h1>
+    <p>Iremos calcular o custo da sua viagem. Para isso, precisamos:</p>
+    
+    <label for="">Da distância da viagem (em Km):</label>
+    <input type="number" min="1" max="1000" id="dist" name="distancia">
+    <input type="submit" value="Calcular" onclick="calcular_viagem()">
+    <p id="msg"></p>
+</div>
+
+</body>
+</html>

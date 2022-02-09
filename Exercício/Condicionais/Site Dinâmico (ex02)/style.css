@@ -1,0 +1,68 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header h1{
+    background-color: chocolate;
+    border: black solid 4px;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+section{
+    background-color: rgba(243, 153, 89, 0.741);
+    border: black solid 2px;
+    max-width: 350px;
+    margin: auto;
+    border-radius: 5%;
+    font-family: sans-serif;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.446);
+}
+
+section article{
+    width: 250px;
+    margin: auto;
+    
+}
+
+footer p{
+    text-align: center;
+    font-style: italic;
+}
+
+#div1{
+    padding: 10px;
+    width: max-content;
+    margin: auto;
+    
+}
+
+#form1 p{
+    margin: 7px;
+}
+
+#submit_button {
+    width: 250px;
+    padding: 3px;
+
+}
+
+picture img{
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 5px;
+    
+}
+
+#txt_idade{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: max-content;
+}
+

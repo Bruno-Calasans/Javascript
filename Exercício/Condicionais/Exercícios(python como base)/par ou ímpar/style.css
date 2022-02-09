@@ -1,0 +1,5 @@
+span#nota{
+    font-weight: bold;
+    width: max-content;
+    text-align: justify;
+}

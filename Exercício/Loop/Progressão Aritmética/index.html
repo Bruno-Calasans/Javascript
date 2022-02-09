@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.A</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Progressão Aritmética</h1>
+        </header>
+           
+            <section>
+                <p id="modelo_pa">
+                    <span id="modelo_tit">Modelo da PA: an = a1 + (n-1)r</span>
+                    <br>
+                    an = enésimo termo
+                    <br>
+                    a1 = primeiro termo
+                    <br>
+                    r = razão
+                </p>
+                
+                <p>
+                    <label for="">Primeiro termo (a1): </label>
+                    <input type="number" min="0" max="1000" id="a1">
+                </p>
+
+                <p>
+                    <label for="">Razão (r): </label>
+                    <input type="number" min="0" max="1000" id="razão">
+                </p>
+
+                <p>
+                    <label for="">Termo (n): </label>
+                    <input type="number" min="0" max="1000" id="an">
+                </p>
+                <p id="pa_criada">
+                    P.A criada: 
+                </p>
+            
+
+                <p id="buttons"> 
+                    <input type="submit" value="Calcular"
+                    id="submit" onclick="PA()">
+                    <input type="submit" value="Criar PA"
+                    id="submit" onclick="criarPA()">
+                </p>
+
+                <p id="pa_txt">
+                    Contagem irá aparecer aqui! 
+                </p>
+
+            </section>
+
+        <footer>
+            <p>
+                &copy Site Teste
+            </p>
+        </footer>
+
+    </main>
+    
+</body>
+</html>

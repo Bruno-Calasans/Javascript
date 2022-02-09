@@ -1,0 +1,18 @@
+div#div1{
+    display: inline-block;
+    border: black solid 5px;
+    padding: 5px;
+}
+
+
+p#pSubmit{
+    width: fit-content;
+    margin: auto;
+    
+    
+}
+
+p#msg{
+    text-align: center;
+    border: rgba(0, 0, 0, 0.371) solid 2px;
+}

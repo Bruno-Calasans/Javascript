@@ -1,0 +1,12 @@
+#div1{
+    border: 3px solid blue;
+    padding: 5px;
+}
+#div2{
+    border: 3px solid red;
+    margin-top: 5px;
+    padding: 5px;
+}
+#div2 span:first-child{
+    font-weight: bold;
+}

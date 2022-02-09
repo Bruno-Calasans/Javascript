@@ -1,0 +1,35 @@
+div#div1{
+    border: black solid 3px;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+    background-color: chocolate;
+    font-family: Tahoma, sans-serif;
+}
+div#div1 h1{
+    text-align: center;
+    background-color: rgba(204, 139, 92, 0.556);
+    border: cornsilk solid 3px;
+}
+
+p#subtit{
+    background-color: rgba(235, 161, 24, 0.857);
+    padding: 5px;
+}
+
+p#submit{
+    width: 50px;
+    margin: auto;
+}
+
+p#submit input{
+    padding: 5px;
+    border-radius: 10%;
+    font-weight: bold;
+}
+
+p#resultado{
+    background-color: rgba(235, 161, 24, 0.857);
+    font-weight: bold;
+    padding: 5px;
+}

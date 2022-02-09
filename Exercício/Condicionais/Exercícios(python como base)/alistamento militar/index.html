@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alistamento Militar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div>
+        <h1>Alistamento Militar</h1>
+
+        <p>
+            Vamos verificar a sua situação. Para isso, informe-nos:
+        </p>
+
+        <p class="config1">
+            <label for="">Primeiro nome</label>
+            <input type="text" id="nome" maxlength="20" required>
+        </p>
+
+        <p class="config1">
+            <label for="">Data de Nascimento</label>
+            <input type="date" id="data" required>
+        </p>
+
+        
+
+        <p id="msg">
+            Situação: <span id="situação">o resultado aparecerá aqui!</span>
+        </p>
+
+        <p id="submit">
+            <input type="submit" value="Verificar" onclick="verificar_situação()">
+        </p>
+    </div>
+    
+</body>
+</html>

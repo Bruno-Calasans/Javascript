@@ -1,0 +1,18 @@
+div#div1{
+    background-color: #1c7c87fc;
+    padding: 10px;
+    border: black solid 1px;
+}
+
+div#div1 h1{
+    text-align: center;
+}
+
+p#psit{
+    background-color: rgb(11, 12, 16);
+    color: cornsilk;
+    width: 210px;
+    text-align: center;
+    border: cornsilk solid 2px;
+    padding: 5px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empréstimo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div>
+        <h1>Seu empréstimo será aprovado ou não?</h1>
+        <p id="subtit">Forneça seus dados abaixo para verificarmos!</p>
+ 
+        <p class="input">
+            <label for="casa">Valor da Residência: R$</label>
+            <input type="number" min="0" max="1000000" id="casa" required>
+        </p>
+        
+        <p class="input">
+            <label for="salário">Salário do comprador: R$</label>
+            <input type="number" min="0" max="1000000" id="salário" required>
+        </p>
+        
+        <p class="input">
+            <label for="anos">Pagar em quantos anos: </label>
+            <input type="number" min="1" max="1000000" id="anos" required>
+        </p>
+
+        <p id="buttons">
+            <input type="submit" value="Verificar"
+            onclick="verificar_emprestimo()">
+            <input type="reset" value="Redefinir">
+        </p>
+
+        <p id="msg">
+            O resultado aparecerá aqui!
+        </p>
+    
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Advinhação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Jogo da Advinhação 2.0</h1>
+        </header>
+           
+            <section>
+                
+                    <div id="form">
+                        <p>
+                            O PC irá pensar em um número de 0 a 10. Tente advinhar. <br>
+                            <strong>Frio</strong> = você já passou pelo número<br>
+                            <strong>Quente</strong> = você ainda não passou pelo número
+                        </p>
+
+                        <p>
+                           <label>Qual o seu palpite?</label>
+                           <input type="number" id="player" min="0" max="10">
+                        </p>
+                        
+                        <p>
+                            <input type="submit" value="Chutar" 
+                            id="submit">
+                        </p>
+                        <p id="resultado">
+                            O resultado vai aparecer aqui!
+                        </p>
+                    </div>
+                
+            </section>
+
+        <footer>
+            <p>
+                &copy Site Teste
+            </p>
+        </footer>
+
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+    background-color: rgba(210, 105, 30, 0.535);
+}
+
+header h1{
+    background-color: rgba(243, 153, 89, 0.967);
+    margin: 4px;
+    padding: 5px;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    background-color: rgba(243, 153, 89, 0.741);
+    border: black solid 2px;
+    width: 350px;
+    margin: auto;
+    font-family: sans-serif;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.446);
+}
+
+section article{
+    margin: 10px;
+    
+}
+
+footer p{
+    text-align: center;
+    font-style: italic;
+}
+
+p#msg{
+    padding: 5px;
+    margin: 16px;
+}
+
+p#saque{
+    padding: 5px;
+    width: 310px;
+    margin: auto;
+}
+
+#btn_saque{
+    display: block;
+    width: 100px;
+    padding: 5px;
+    margin: auto;
+}
+p#resultado{
+    background-color: aliceblue;
+    border: black solid 2px;
+    padding: 5px;
+    margin: 5px;
+}

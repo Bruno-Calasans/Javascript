@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Jogo do par ou ímpar</h1>
+        </header>
+           
+            <section>
+                
+                    <div id="form">
+                        <p>
+                            A CPU irá sortear um número de 0 a 10. <br>
+                            <strong>Primeiro:</strong> escolha um número de 0 a 10. <br>
+                            <strong>Segundo:</strong> escolha entre <b>par</b> ou <b>ímpar</b>. 
+                            <br> <br>
+                            <em>Se a <b>soma</b> do número que você escolheu com o que a CPU escolheu for do <b>mesmo tipo</b> que você escolheu(par ou ímpar), você ganha.</em>
+                        </p>
+
+                        <p>
+                           <label>Número: </label>
+                           <input type="number" id="num" min="0" max="10">
+
+                           <label>Escolha: </label>
+                           <select id="escolha">
+                               <option value="p">Par</option>
+                               <option value="i">Ímpar</option>
+                           </select>
+                        </p>
+                        
+                        <p>
+                            <input type="submit" value="Jogar!" 
+                            id="submit">
+                        </p>
+                       
+                        <p id="resultado">
+                            O resultado vai aparecer aqui!
+                        </p>
+                    </div>
+                
+            </section>
+
+        <footer>
+            <p>
+                &copy Site Teste
+            </p>
+        </footer>
+
+    </main>
+    
+</body>
+</html>
