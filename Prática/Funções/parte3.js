@@ -2,13 +2,24 @@
 
 // function enclosure
 function teste(){
-
     let x = 100
 
     // teste2() tem acesso à variável x
     function teste2(){
-        console.log(x);
+        let y = 0
+        console.log(x)
+
+        // teste() também tem acesso à variável x e y
+        function teste3(){
+            let z = 10
+            console.log(x, y, z)
+
+        }
+        teste3()
     }
-    teste2();
+    teste2()
+    
 }
+
+teste()
 

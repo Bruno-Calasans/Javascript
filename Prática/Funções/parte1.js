@@ -26,7 +26,6 @@ console.log(x(10, 20));
 const arrowFunction = (nome, sobrenome) => `${nome} ${sobrenome}`;
 console.log(arrowFunction('James' ,'Jones'));
 
-const msgBoasVindas = nome => 'Olá, '+nome;
+const msgBoasVindas = nome => 'Olá, '+ nome;
 console.log(msgBoasVindas('John'))
-
 
