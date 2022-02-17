@@ -12,11 +12,14 @@ function teste(){
         // teste() também tem acesso à variável x e y
         function teste3(){
             let z = 10
+            var w = 666
             console.log(x, y, z)
-
+            
         }
         teste3()
+        
     }
+    
     teste2()
     
 }
