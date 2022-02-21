@@ -1,0 +1,29 @@
+
+
+{"nome": "teste"},
+
+{"idade": 30},
+
+{"peso": 54.60},
+
+{"trabalhando": false},
+
+{"estudando": null},
+
+{
+    "meuArray":["teste", 20, 85.4, true, false]
+},
+
+{
+    "Fruta":{"Nome": "maça", "Cor": "Vermelha", "Amarga": false}
+},
+
+{
+    "pessoa":{"nome": "Jone", "Idade": 30, "peso": 56, "trabalhando": true,
+     "detalhes":{
+         "LocalTrabalho": "Google",
+         "Salário": 3000,
+         "codContrato": "FGHJ897"
+    }}
+}
+
