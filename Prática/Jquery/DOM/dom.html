@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="dom.js" defer></script>
+    <title>Dom com jquery</title>
+    <style>
+        p{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h2>Exemplo de Jquery</h2>
+        <button id="teste1">Clique em mim</button>
+        <p id="p1">
+            Testando
+        </p>
+    </div>
+
+    <div>
+        <h2>Usando o text()</h2>
+        <p id="p2">
+            exemplo de texto
+        </p>
+    </div>
+
+    <div>
+        <h2>Usando o html()</h2>
+        <p id="p3">
+            <b>exemplo de texto</b>
+        </p>
+    </div>
+
+    <div>
+        <h2>Usando o href()</h2>
+        <button id="teste2">Clique em mim</button>
+        <input type="text" id="inputExemplo1">
+        <p id="p4"></p>
+    </div>
+
+    <div>
+        <h2>Usando o href()</h2>
+        <a id="link1" href="www.example.com">Link</a>
+    </div>
+
+    <div>
+        <h2>Usando o append()</h2>
+        <p id="p5">Exemplo de texto</p>
+    </div>
+
+    <div>
+        <h2>Usando o after()</h2>
+        <p id="p6">Exemplo de texto</p>
+    </div>
+
+    <div>
+        <h2>Usando o append() - inserindo elementos</h2>
+        <p id="p7">Exemplo de texto</p>
+    </div>
+
+    <div>
+        <h2>Usando o after() - inserindo elementos</h2>
+        <p id="p8">Exemplo de texto</p>
+    </div>
+
+    <div>
+        <h2>Usando o prepend()</h2>
+        <p id="p9">Exemplo de texto</p>
+    </div>
+
+    <div>
+        <h2>Usando o before()</h2>
+        <p id="p10">Exemplo de texto</p>
+    </div>
+
+    <div>
+        <h2>Usando o prepend() - inserindo elementos</h2>
+        <p id="p11">Exemplo de texto</p>
+    </div>
+
+    <div>
+        <h2>Usando o before() - inserindo elementos</h2>
+        <p id="p12">Exemplo de texto</p>
+    </div>
+
+    <button id="teste3">Remover div</button>
+    <h2>Removendo elemento com remove()</h2>
+    <div id="divRemove">
+        <p>div que será removida</p>
+    </div>
+
+    <button id="teste4">Limpar div</button>
+    <h2>Removendo elementos filhos com empty()</h2>
+    <div id="divEmpty">
+        <p>div que será limpada</p>
+    </div>
+
+
+    <button id="btn5">Remover todos elementos da classe .teste</button>
+    <h2>Removendo elemento com remove()</h2>
+    <div>
+        <p class="teste">sou da classe 'teste'</p>
+        <p class="teste">sou da classe 'teste'</p>
+        <p>não sou da classe 'teste'</p>
+        <p class="teste">sou da classe 'teste'</p>
+    </div>
+
+    <button id="btn6">Remover todos elementos da classe 'teste' e 'teste2'</button>
+    <h2>Removendo elemento com remove()</h2>
+    <div>
+        <p class="teste">sou da classe 'teste'</p>
+        <p class="teste">sou da classe 'teste'</p>
+        <p class="teste2">sou da classe 'teste2'</p>
+        <p class="teste">sou da classe 'teste'</p>
+        <p class="teste2">sou da classe 'teste2'</p>
+    </div>
+ 
+</body>
+</html>
