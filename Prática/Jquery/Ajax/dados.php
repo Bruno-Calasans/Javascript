@@ -1,6 +1,8 @@
 
 <?php 
 
-    $array = ['teste', 10];
-    echo json_encode($array);
+    $nome = $_POST["nome"].
+    $sobrenome = $_POST["sobrenome"];
+
+    echo "Nome completo: $nome $sobrenome";
 
