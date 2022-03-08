@@ -1,4 +1,5 @@
 
+/*
 
     // function closure
     function funçãoExterna(varExterna){
@@ -30,5 +31,33 @@
     console.log(objetoCont())
     console.log(objetoCont())
     console.log(objetoCont())
+*/
+
+    // closure - exemplo 1
+    const x = 'global'
+
+    function primeira(){
+        return x
+    }
+
+    function segunda(){
+        const x = 'local'
+        return primeira()
+    }
+    console.log(segunda())
+
+    // closure - exemplo 2
+    const y = 'Global'
+
+    function fora(){
+        const y = 'local'
+        return function dentro(){
+            return y
+        }
+    }
+    let resultado = fora()
+    console.log(resultado())
+
+    
 
     

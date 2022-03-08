@@ -1,5 +1,5 @@
 
-    // criando um constructor
+    // criando um constructor a partir de uma função
     function Pessoa(nome, sobrenome, idade, peso){
 
         this.nome = nome
@@ -15,10 +15,10 @@
     const pessoa1 = new Pessoa('John', 'James', 30, 56.67)
     pessoa1
 
-    
     // adicionado método e atributos a um constructor da forma errada
     Pessoa.novo = 10
     Pessoa.novoMétodo = function(){return 'Olá'}
     const pessoa2 = new Pessoa('Agatha', 'Lu', 25, 56)
     console.log(pessoa2.novo)
     //console.log(pessoa2.novoMétodo())
+    

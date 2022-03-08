@@ -6,6 +6,7 @@
         idade: 20,
         estudando: true,
         trabalhando: false,
+        
         // getters
         get n(){return this.nome},
         get i(){return this.idade},

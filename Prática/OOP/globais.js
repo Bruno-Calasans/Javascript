@@ -1,5 +1,4 @@
 
-
     function Teste(a, b, c){
 
         this.a = a
