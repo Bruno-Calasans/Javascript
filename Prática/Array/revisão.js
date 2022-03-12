@@ -1,10 +1,9 @@
-//criando array
-var comidas = ['pão', 'banana', 'carne', 'suco']//primeira forma
-var roupas = ['camiseta',
-            'short',
-            'blusa',
-            'sapato']//segunda forma
-var veiculos = new Array('bicicleta', 'carro', 'moto', 'caminhão')//terceira forma
+
+// array é um objeto
+console.log(typeof Array)
+
+
+
 
 //console.log(comidas, roupas, veiculos)
 
