@@ -25,18 +25,23 @@
     console.log(exemplo1.removeAttributeNode(node));
     console.log(exemplo1);
 
-    // modificando atributos
+    // modificando atributos usando setAttribute()
     exemplo1.setAttribute('id', 'novoId')
     console.log(exemplo1);
 
-    // criando atributos
+    // criando atributos usando setAttribute()
     exemplo1.setAttribute('class', 'classeExemplo1')
     console.log(exemplo1);
 
+    // criando attribute node
+    let title = document.createAttribute('title')
+    title.value = 'titleExemplo'
 
+    // inserindo um attribute node no elemento
+    exemplo1.setAttributeNode(title)
+    console.log(exemplo1);
 
-    
-    /*// usando a propriedade attibutes -----------------------------------------
+    // usando a propriedade attibutes -----------------------------------------
     let exemplo2 = document.getElementById('divExemplo2')
     // mostrando o atributo 'attributes'
     console.log(exemplo1.attributes);
@@ -58,7 +63,13 @@
 
     // deletando um attribute node
     console.log(exemplo1.attributes.removeNamedItem('id'));
-    console.log(exemplo1.attributes);*/
+    console.log(exemplo1.attributes);
+
+    // inserindo attribute node no array namedNodeMap
+    let novoId = document.createAttribute('id')
+    novoId.value = 'novoId'
+    exemplo2.attributes.setNamedItem(novoId)
+
 
     
     

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event Object</title>
+    <script src="script.js" defer></script>
+    <style>
+
+
+        #type{
+            display: flex;
+            background-color: chocolate;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #typeInterna{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+        }
+
+        #button{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: auto;
+
+        }
+
+        #offset, #screen{
+            background-color: bisque;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Eventos de Mouse</h1>
+
+    <h2>Tipos de Eventos</h2>
+    <div id="type">
+        <div id="typeInterna">Clique ou passe o mouse em mim</div>
+    </div>
+    <div id="outputType"></div>
+
+    <h2>Propriedades</h2>
+
+    <h3>Propriedade button</h3>
+    <div id="button">Clique em mim</div>
+    <div id="outputButton"></div>
+    <div id="outputButtons"></div>
+
+    <h3>Propriedade client</h3>
+    <div id="outputClient"></div>
+    
+    <h3>Propriedade offsetX e offsetY</h3>
+    <div id="offset"></div>
+    <div id="outputOffset"></div>
+
+    <h3>Propriedade screenX e screenY</h3>
+    <div id="outputScreen"></div>
+
+    <h3>Propriedade pageX e pageY</h3>
+    <div id="outputPage"></div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+
+    <style>
+
+        body{
+            margin: 0px;
+        }
+
+        #exemplo{
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+            padding: 10px;
+            border-top: 5px solid red;
+            border-left: px solid black;
+            margin: auto;
+            top: 50px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Posicionamento de um elemento</h1>
+    <div id="exemplo"></div>
+    <div id="bordaE"></div>
+    <div id="bordaT"></div>
+
+    <div id="larguraP"></div>
+    <div id="alturaP"></div>
+
+    <div id="larguraPB"></div>
+    <div id="alturaPB"></div>
+
+    <div id="offsetTop"></div>
+    <div id="offsetLeft"></div>
+    
+    <div id="ancestralProximo">a</div>
+    
+</body>
+
+    <script>
+        
+        // elemento principal
+        const div = document.getElementById('exemplo')
+
+        // bordas sem padding
+        let bordaT = document.getElementById('bordaT')
+        let bordaE = document.getElementById('bordaE')
+        
+        bordaE.innerHTML = 'Borda esquerda: '+ div.clientLeft
+        bordaT.innerHTML = 'Borda Superior: '+ div.clientTop
+
+        // largura com padding
+        let larguraP = document.getElementById('larguraP')
+        larguraP.innerHTML = 'Largura com padding: '+div.clientWidth
+
+        // largura com padding e border
+        let larguraPB = document.getElementById('larguraPB')
+        larguraPB.innerHTML = 'Largura com padding e border: '+div.offsetWidth
+
+        // altura com padding
+        let alturaP = document.getElementById('alturaP')
+        alturaP.innerHTML = 'Altura com padding: '+div.clientHeight
+
+        // altura com padding e border
+        let alturaPB = document.getElementById('alturaPB')
+        alturaPB.innerHTML = 'Altura com padding e border: '+div.offsetHeight
+
+        // posição em realação ao elemento pai
+        let offsetLeft = document.getElementById('offsetLeft')
+        let offsetTop = document.getElementById('offsetTop')
+
+        offsetLeft.innerHTML = 'Esquerda: '+div.offsetLeft
+        offsetTop.innerHTML = 'Top: '+div.offsetTop
+
+        // acenstral mais próximo
+        let ancestralProximo = document.getElementById('ancestralProximo')
+        ancestralProximo.innerHTML = 'Ancentral mais próximo: '+ div.offsetParent
+
+
+    </script>
+</html>
