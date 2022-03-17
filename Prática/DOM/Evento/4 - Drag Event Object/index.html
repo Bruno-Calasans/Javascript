@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragEvent Object</title>
+    <style>
+
+        #container{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #container div{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+        }
+
+   
+    </style>
+</head>
+<body>
+    <h1>Eventos Drag-n-Drop</h1>
+
+    <div id="container">
+
+        <div id="div1" class="dropzone">
+            <span id="target" draggable="true">Sou o target</span>
+        </div>
+
+        <div id="div2" class="dropzone"></div>
+    </div>
+
+    <div id="output"></div>
+
+    <h2>dataTransfer</h2>
+    <div >Drop effect: <span id="dropEffect"></span></div>
+    <div >Effect allowed: <span id="effectAllowed"></span></div>
+    <div >Items: <span id="items"></span></div>
+    <div >Types: <span id="types"></span></div>
+    
+</body>
+
+    <script>
+
+        // pegando os elementos
+        const div1 = document.getElementById('div1')
+        const div2 = document.getElementById('div2')
+        const target = document.getElementById('target')
+
+        let output = document.getElementById('output')
+
+        // eventos drag-n-drop - elemento target
+        /*target.ondragstart = () => output.innerHTML = 'O target começou a ser mover'
+        target.ondrag = () => output.innerHTML = 'O target está sendo arrastado';
+        target.ondragend = () => output.innerHTML = 'O target foi solto'*/
+
+        // eventos drag-n-drop - elemento drop
+        /*drop.ondragenter = () => output.innerHTML = 'O target entrou no drop'
+        drop.ondragover = () => output.innerHTML = 'O target está sobre o drop'
+        drop.ondragleave = () => output.innerHTML = 'O target saiu do drop'
+        drop.ondrop = () => output.innerHTML = 'O target foi solto no drop'*/
+
+        // propriedade dataTransfer
+        /*target.ondrag = function(e){
+
+            // pegando o dataTransfer
+            let data = e.dataTransfer
+
+            // mostrando o dropEffect
+            let outputDropEffect = document.getElementById('dropEffect')
+            outputDropEffect.innerHTML = data.dropEffect
+
+            // mostrando o allowedEffect
+            let outputEffectAllowed = document.getElementById('effectAllowed')
+            outputEffectAllowed.innerHTML = data.effectAllowed
+
+            // mostrando os items
+            let items = document.getElementById('items')
+            items.innerHTML = data.items
+
+            // mostrando os tipos
+            let types = document.getElementById('types')
+            types.innerHTML = data.types
+        
+
+        }*/
+
+        // definindo o tipo e o dado
+        function drag(e){
+            e.dataTransfer.setData('text', e.target.id)
+        }
+
+        // para as divs
+        div1.ondragstart = drag
+        div2.ondragstart = drag
+           
+        // definindo a permissão para o drop
+        function permitirDrop(e){
+            e.preventDefault()
+        }
+        
+        // para as divs
+        div1.ondragover = permitirDrop
+        div2.ondragover = permitirDrop
+
+        // sdefinindo a função para soltar o elemento
+        function drop(e){
+            e.preventDefault()
+            console.log(e.dataTransfer);
+            let data = e.dataTransfer.getData('text')
+            e.target.appendChild(document.getElementById(data))
+        }
+
+        // para as divs
+        div1.ondrop = drop
+        div2.ondrop = drop
+
+        // destacando 
+        function destacar(e){
+
+            if(e.target.className == 'dropzone'){
+                e.target.style.border = '1px solid black'
+            }
+        }
+
+        div1.ondragenter = destacar
+        div2.ondragenter = destacar
+
+        // tirando o destaque
+        function tirarDestaque(e){
+          if(e.target.className == 'dropzone'){e.target.style.border = ''}
+            
+        }
+
+        div1.ondragleave = tirarDestaque
+        div2.ondragleave = tirarDestaque
+
+    </script>
+</html

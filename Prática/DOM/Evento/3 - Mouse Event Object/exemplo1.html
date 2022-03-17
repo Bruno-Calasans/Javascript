@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo1</title>
+    <style>
+        #movel{
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            position: absolute;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Elemento movível</h1>
+
+    <div id="movel">Mova-me</div>
+    
+</body>
+    <script>
+        let div = document.getElementById('movel')
+        
+        // enquanto estiver o cursor do mouse movendo sobre a div
+        div.onmousemove = function(e){
+
+            // ajeitando o cursor
+            e.target.style.cursor = 'move'
+
+            // se o botão esquerdo estiver pressionado
+            let btn = e.which
+            if(btn == 1){
+
+                // posição do ponteiro do mouse
+                let posXMouse = e.clientX
+                let posYMouse = e.clientY
+
+                // dimensões do elemento
+                let larguraElemento = this.clientWidth
+                let alturaElemento = this.clientHeight
+
+                // alterando a posição vertical do elemento
+                e.target.style.top = `${posYMouse - alturaElemento/2}px`
+
+                // alterando a posição horizontal do elemento
+                e.target.style.left = `${posXMouse - larguraElemento/2}px`
+               
+            }
+
+        }
+        
+        
+
+
+        
+
+    </script>
+</html>
