@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag-n-Drop</title>
+    <script src="script.js" defer></script>
+
+    <style>
+
+        img{
+            width: 30px;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .dropzone{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        #elemento{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+            width: 70px;
+            height: 70px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Testando drag-n-drop</h1>
+
+    <h1>Arrastando texto</h1>
+
+    <img src="images/text.png" id="textImg" alt="targetText">
+
+    <div class="container">
+
+        <div id="dzText1" class="dropzone text">Texto</div>
+
+        <div id="dzText2" class="dropzone text"></div>
+
+    </div>
+
+    <h1>Arrastando elementos</h1>
+
+    <div class="container">
+
+        <div id="dzElemento1" class="dropzone text">
+            <div id="elemento">Elemento</div>
+        </div>
+
+        <div id="dzElemento2" class="dropzone text"></div>
+
+    </div>
+
+    <h1>Arrastando elinks</h1>
+
+    <div class="container">
+
+        <div id="dzLink1" class="dropzone link">
+            http://www.example.com
+        </div>
+
+        <div id="dzlink2" class="dropzone link"></div>
+
+    </div>
+    
+</body>
+</html>

@@ -99,6 +99,10 @@
         // para as divs
         div1.ondragstart = drag
         div2.ondragstart = drag
+
+        div1.ondrag = function(e){
+            console.log(e.dataTransfer);
+        }
            
         // definindo a permissão para o drop
         function permitirDrop(e){
