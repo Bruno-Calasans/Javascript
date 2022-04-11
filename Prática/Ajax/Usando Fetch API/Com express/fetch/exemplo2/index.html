@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch - parte 2</title>
+</head>
+<body>
+
+    <form name="myForm" action="/fetch/exemplo2" method="POST"
+    >
+        <label>Nome: <input type="text" name="nome"></label>
+        <label>Sobrenome: <input type="text" name="sobrenome"></label>
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <div id="output"></div>
+
+    <script>
+
+        let output =  document.getElementById('output')
+
+        myForm.onsubmit =  async e => {
+
+            // nenhum FormData será criado caso use essa opção
+            e.preventDefault()
+          
+            // criando um query string
+            let fd = new FormData(e.target)
+            let params = new URLSearchParams(fd)
+            
+            // configurando
+            const options = {
+                method: myForm.method, 
+                body: params
+            }
+
+            /*
+            fetch(myForm.action, options)
+
+                .then(res => {
+
+                    if(!res.ok){
+
+                        if(res.status == 404) throw `Página ${res.url} não encontrada`
+                    } 
+
+                    if(myForm.method == 'post') return res.json()
+                })
+
+                .then( json => {
+
+                   output.innerHTML = JSON.stringify(json)
+                
+                })
+           
+                .catch(e => output.innerHTML = e)
+                */
+
+                // usando async e await
+                try{
+
+                    let response = await fetch(myForm.action, options)
+
+                    if(!response.ok){
+
+                        if(response.status == 404)
+                        throw `Página ${response.url} não encontrada`
+                    }
+
+                    let jsonObj = await response.json()
+                    output.innerHTML = JSON.stringify(jsonObj)
+                }
+                catch(e){
+                    output.innerHTML = e
+                }
+
+        }  
+
+
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>
