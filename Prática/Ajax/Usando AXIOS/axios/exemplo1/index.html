@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Axios - parte 1</title>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
 </head>
 <body>
 
@@ -14,10 +15,55 @@
     <script>
 
         const output = document.getElementById('output')
-        axios.get('../../dados/estados.json')
 
-            
+        // uso básico do Axios
+        axios.get('../dados/estados.json')
+
+            // recebe um objeto response
+            .then(response => {
+
+                // propriedades do objeto response
+                console.log(response.data);
+                console.log(response.status);
+                console.log(response.statusText);
+                console.log(response.headers);
+                console.log(response.config);
+            })
+
+            // lidando com erros
+            .catch(error => {
+
+                // requisição foi feita e o server enviou uma código de status
+                if(error.response){
+
+                    // fazer alguma coisa
+
+                // a requisição foi feita, mas nenhuma resposta foi recebida
+                }else if(error.request){
+
+                    // fazer alguma coisa
+
+                // alguma coisa errada com as configurações do request
+                }else{
+
+                    // fazer alguma coisa
+
+                }
+            })
+
+            // primeira forma
+            axios({
+                url: '/user/edit',
+                method: 'GET',
+            })
+
+            // segunda forma
+            axios.get(url, {config})
+
+            // terceira forma
+            axios.post(url, dado, {config})
+
+
     </script>
-
 </body>
 </html>

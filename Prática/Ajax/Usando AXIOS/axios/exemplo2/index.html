@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Axios - oarte 2</title>
+</head>
+<body>
+
+
+    <h1>GET e POST com Axios</h1>
+    
+    <div id="get"></div>
+    <div id="post"></div>
+
+    <form name="form" action="formulario2" method="POST">
+        <label>Nome: <input type="text" name="nome"></label>
+        <label>Sobrenome: <input type="text" name="sobrenome"></label>
+        <button>Enviar</button>
+    </form>
+    <div id="output"></div>
+
+    <script>
+
+        const divGet = document.getElementById('get')
+        const divPost = document.getElementById('post')
+
+        // fazendo um requisição GET
+
+        // usando query string
+        /*
+        axios.get('parOuImpar', // primeira forma
+        {
+            params: {num: 10},
+        })
+        .then(res => {
+            divGet.innerHTML= `O número ${res.data.num} é ${res.data.resultado}`
+        })
+
+        .catch(erro => {
+
+            if(erro.response){
+                console.log(`Erro HTTP ${erro.response.status}: ${erro.response.statusText}`);
+            }
+        })*/
+
+        // let num = 1
+        // axios(`parOuImpar?num=${num}`) // segunda forma
+
+        // .then(res => {
+        //     divGet.innerHTML= `O número ${res.data.num} é ${res.data.resultado}`
+        // })
+
+        // .catch(erro => {
+
+        //     if(erro.response){
+        //         console.log(`Erro HTTP ${erro.response.status}: ${erro.response.statusText}`);
+        //     }
+        // })
+
+        // usando parâmetros de URL
+        /*
+        let num = 100
+        axios.get('parOuImpar/'+num) 
+        .then(res => {
+            divGet.innerHTML= `O número ${res.data.num} é ${res.data.resultado}`
+        })
+
+        .catch(erro => {
+
+            if(erro.response){
+                console.log(`Erro HTTP ${erro.response.status}: ${erro.response.statusText}`);
+            }
+        })*/
+
+        // fazendo um post
+        // axios.post('formulario', 
+        // {
+        //     data: 
+        // })
+
+        // .then(res => {
+        //     divPost.innerHTML= JSON.stringify(res.data)
+        // })
+
+        // .catch(erro => {
+
+        //     if(erro.response){
+        //         console.log(`Erro HTTP ${erro.response.status}: ${erro.response.statusText}`);
+        //     }
+        // })
+
+
+        const output = document.getElementById('output')
+        form.onsubmit = e => {
+
+            e.preventDefault()
+
+            let formData = new FormData(form)
+            let params = new URLSearchParams(formData)
+
+            axios.post('formulario2', params)
+
+            .then(res => {
+                output.innerHTML= JSON.stringify(res.data)
+            })
+
+            .catch(erro => {
+
+                if(erro.response){
+                    console.log(`Erro HTTP ${erro.response.status}: ${erro.response.statusText}`);
+                }
+            })
+
+        }
+       
+
+    </script>
+    
+</body>
+</html>
